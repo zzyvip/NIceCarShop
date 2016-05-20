@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.MainActivity">
+<fragment
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_above="@+id/gridLayout" />
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/gridLayout">
+
+        <RadioGroup android:id="@+id/radiogroup"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="首页"
+            android:layout_gravity="center"
+            android:id="@+id/mainPage"
+            android:drawableTop="@drawable/selector_home"
+            android:checked="true"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:button="@null"
+            android:text="买车"
+            android:layout_gravity="center"
+            android:id="@+id/buyCar"
+            android:drawableTop="@drawable/selector_buycar"
+            android:checked="false"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="卖车"
+            android:layout_gravity="center"
+            android:drawableTop="@drawable/selector_salecar"
+            android:id="@+id/saleCar"
+            android:checked="false"
+            android:layout_weight="1"
+            android:button="@null"
+            />
+
+        <RadioButton
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawableTop="@drawable/selector_myzoom"
+            android:text="我的"
+            android:layout_gravity="center"
+            android:id="@+id/myzoom"
+            android:layout_row="0"
+            android:checked="false"
+            android:layout_weight="1"
+            android:button="@null"
+            />
+    </RadioGroup>
+
+    </GridLayout>
+</RelativeLayout>
